@@ -1,0 +1,73 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 600px) {
+  nav {
+    font-family: "Spectral", serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+nav .nav-left, nav .nav-right {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+}
+nav .nav-left i, nav .nav-right i {
+  font-size: 2em;
+}
+@media screen and (max-width: 600px) {
+  nav .nav-left i, nav .nav-right i {
+    display: none;
+  }
+}
+@media screen and (min-width: 600px) {
+  nav .nav-left, nav .nav-right {
+    align-items: center;
+    margin-left: 2em;
+    flex-direction: row;
+  }
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 600px) {
+  nav ul {
+    flex-direction: row;
+  }
+}
+nav ul li {
+  margin: 20px 0;
+}
+@media screen and (min-width: 600px) {
+  nav ul li {
+    margin-right: 20px;
+  }
+}
+nav ul li:hover {
+  cursor: pointer;
+  background-color: black;
+  border-radius: 10px;
+  color: beige;
+  transition: all 0.4s;
+  padding: 3px 5px;
+}
+@media screen and (max-width: 600px) {
+  nav .nav-right input {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */
